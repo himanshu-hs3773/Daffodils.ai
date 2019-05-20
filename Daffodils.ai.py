@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Poetry Generator
+# Lyrics Generator
 
 # Using First LSTM model to generate some paragraph format of text
 
