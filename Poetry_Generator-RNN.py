@@ -1,9 +1,5 @@
 #!/usr/bin/env python////
-# coding: utf-8
-
-# Lyrics Generator
-
-# Using First LSTM model to generate some paragraph format of text
+# coding:
 
 # In[ ]:
 
