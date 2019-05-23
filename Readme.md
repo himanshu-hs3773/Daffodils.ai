@@ -265,11 +265,15 @@ The result still seem to be quite impressive and hence the project achieves the 
 This character text model is a very popular way for generating text using recurrent neural networks.
 Below are some resources which were used in developing this project
 
---Generating Text with Recurrent Neural Networks [pdf], 2011 (http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf)
---MXNet tutorial for using an LSTM for text generation. (http://mxnetjl.readthedocs.io/en/latest/tutorial/char-lstm.html)
---Keras code example of LSTM for text generation. (https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py)
--- Text Genration in python with Keras (https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/)
---Lasagne code example of LSTM for text generation. (https://github.com/Lasagne/Recipes/blob/master/examples/lstm_text_generation.py)
+* Generating Text with Recurrent Neural Networks [pdf], 2011 (http://www.cs.utoronto.ca/~ilya/pubs/2011/LANG-RNN.pdf)
+
+* MXNet tutorial for using an LSTM for text generation. (http://mxnetjl.readthedocs.io/en/latest/tutorial/char-lstm.html)
+
+* Keras code example of LSTM for text generation. (https://github.com/fchollet/keras/blob/master/examples/lstm_text_generation.py)
+
+* Text Genration in python with Keras (https://machinelearningmastery.com/text-generation-lstm-recurrent-neural-networks-python-keras/)
+
+* Lasagne code example of LSTM for text generation. (https://github.com/Lasagne/Recipes/blob/master/examples/lstm_text_generation.py)
 
 
 ## Summary/Conclusion ##
