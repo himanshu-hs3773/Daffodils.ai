@@ -127,4 +127,5 @@ These 3 goals and learnings were primarily have been achieved after implementing
 
 These 3 goals and learnings were primarily have been achieved after implementing the second part of our project:
 --How to train an LSTM network on text sequences
---How to use the trained network to generate new sequences. --How to develop stacked LSTM networks and lift the performance of the model.
+--How to use the trained network to generate new sequences. 
+--How to develop stacked LSTM networks and lift the performance of the model.
