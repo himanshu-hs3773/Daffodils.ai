@@ -36,7 +36,7 @@ Total Sequences: 24499
 
 #### Parameter after fitting the model ####
 _________________________________________________________________
-Layer (type)                 Output Shape              Param #   
+Layer (type)                 Output Shape              Param    
 =================================================================
 embedding_2 (Embedding)      (None, 50, 50)            193600    
 _________________________________________________________________
@@ -93,7 +93,7 @@ In this part of our project we will focuss primarily on LSTM recurrent neural ne
 
 So firstly Small LSTM Recurrent Neural Network is designed then later a Large LSTM Recurrent Neural Network is designed which will significantly improve the performance of the model
 
-1) Implementing Smaller Neural Network
+### 1) Implementing Smaller Neural Network ###
 
 #### Parameter after fitting the model ####
 
@@ -170,7 +170,7 @@ Done.
 
 
 
-2) Implementing Larger Neural Network
+### 2) Implementing Larger Neural Network ###
 
 We had got the results in the above sections but those were not so accurate results so now we will try to improve the performance or quality of the generated text by creating a much larger network.
 We try to keep number of memory units to 256 but we will add second layer to our network
