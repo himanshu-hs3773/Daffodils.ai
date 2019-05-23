@@ -123,7 +123,8 @@ In this project we could discover how we can efficiently develop and train a LST
 
 These 3 goals and learnings were primarily have been achieved after implementing the first part of our project-
 -- How to prepare text for developing a word-based language model.
--- How to design and fit a neural language model with a learned embedding and an LSTM hidden layer. -- How to use the learned language model to generate new text with similar statistical properties as the source text.
+-- How to design and fit a neural language model with a learned embedding and an LSTM hidden layer. 
+-- How to use the learned language model to generate new text with similar statistical properties as the source text.
 
 These 3 goals and learnings were primarily have been achieved after implementing the second part of our project:
 --How to train an LSTM network on text sequences
