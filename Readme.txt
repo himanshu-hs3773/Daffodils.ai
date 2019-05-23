@@ -1,9 +1,9 @@
-Machine Learning Project -
+# Dafodils.ai- Text and Story Generator Tool
 Nipun Dixit nd1462- Himanshu Singh hs3773
 
 
 
-Text Generator Model with LSTM Recurrent Neural Network
+## Text Generator Model with LSTM Recurrent Neural Network ##
 
 
 In this Project firstly we try to develop a Word-Level Neural Network model and used it to Generate the text where it will predict the probability of the occurence of the next word in the sequence which will be based upon the word which has already been observed in the sequence.
@@ -12,20 +12,21 @@ Thereafter we will push our understanding to further develop a text generator wi
 Generative models are used to study the effectiveness of the model which has learned the problem and also are helpful in learning more about the problem domain.
 In this project we will further try to create a generative model for the text, which will be done character by character by using LSTM recurrent neural network with Keras
 
-Developing a Word-Level Neural Language Model and using it to Genrate Text
+
+### Developing a Word-Level Neural Language Model and using it to Genrate Text ###
 Neural networks are generally preferred in the development of the statistical language models as they can utilise a distributed representation where different words with similar meanings have similar representation and apart from that they can also use a larger context of recently observed words in making the predictions.
 
 
 
-First Part- Developing a Word-Level Neural Language Model and using it to Genrate Text
+#### First Part- Developing a Word-Level Neural Language Model and using it to Genrate Text ####
 
-Generated Tokens
+##### Generated Tokens #####
 
 ['the', 'strange', 'case', 'of', 'dr', 'jekyll', 'and', 'mr', 'hyde', 'by', 'robert', 'louis', 'stevenson', 'contents', 'story', 'of', 'the', 'door', 'search', 'for', 'mr', 'hyde', 'dr', 'jekyll', 'was', 'quite', 'at', 'ease', 'the', 'carew', 'murder', 'case', 'incident', 'of', 'the', 'letter', 'incident', 'of', 'dr', 'lanyon', 'incident', 'at', 'the', 'window', 'the', 'last', 'night', 'dr', 'narrative', 'henry', 'full', 'statement', 'of', 'the', 'case', 'story', 'of', 'the', 'door', 'mr', 'utterson', 'the', 'lawyer', 'was', 'a', 'man', 'of', 'a', 'rugged', 'countenance', 'that', 'was', 'never', 'lighted', 'by', 'a', 'smile', 'cold', 'scanty', 'and', 'embarrassed', 'in', 'discourse', 'backward', 'in', 'sentiment', 'lean', 'long', 'dusty', 'dreary', 'and', 'yet', 'somehow', 'lovable', 'at', 'friendly', 'meetings', 'and', 'when', 'the']
 Total Tokens: 24550
 Unique Tokens: 3871
 
-Parameter after fitting the model
+##### Parameter after fitting the model #####
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -66,7 +67,7 @@ Epoch 9/100
 Epoch 10/100
 24499/24499 [==============================] - 37s 1ms/step - loss: 5.4635 - acc: 0.1002
 
-Final generated output of our model which is new and unique text
+##### Final generated output of our model which is new and unique text #####
 
 The first output paragraph is the printed seed text
 Then the 50 words of the generated text are printed.
@@ -77,7 +78,11 @@ two ahead now anatomical was long overthrown the screaming and obligation at lea
 
 
 
-Second Part of the Project- Text Generator with LSTM Recurrent Neural Network with Keras-
+#### Second Part of the Project- Text Generator with LSTM Recurrent Neural Network with Keras ####
+
+In this part of our project we will focuss primarily on LSTM recurrent neural network to improve the performance and the quality of the text generation, here we will use another text dataset to perform the text generation operation.
+
+So firstly Small LSTM Recurrent Neural Network is designed then later a Large LSTM Recurrent Neural Network is designed which will significantly improve the performance of the model
 
 1) Implementing Smaller Neural Network
 
@@ -92,7 +97,7 @@ We try to keep number of memory units to 256 but we will add second layer to our
 
 
 
-Following are the further Ideas which can be used in the working of our model
+## Following are the further Ideas which can be used in the working of our model ##
 
 --Predicting fewer than 1,000 characters as output for a given seed.
 --Remove all punctuation from the source text, and therefore from the models’ vocabulary.
@@ -106,7 +111,7 @@ Following are the further Ideas which can be used in the working of our model
 --Tuning the batch size, trying a batch size of 1 as a baseline and then choosing the larger sizes from there.
 
 
-Resources and Referrences Used
+## Resources and Referrences Used ##
 
 This character text model is a very popular way for generating text using recurrent neural networks.
 Below are some resources which were used in developing this project
@@ -118,15 +123,15 @@ Below are some resources which were used in developing this project
 --Lasagne code example of LSTM for text generation. (https://github.com/Lasagne/Recipes/blob/master/examples/lstm_text_generation.py)
 
 
-Summary
+## Summary ##
 In this project we could discover how we can efficiently develop and train a LSTM recurrent neural network model for text generation with the Keras which is a deep learning library.
 
 These 3 goals and learnings were primarily have been achieved after implementing the first part of our project-
--- How to prepare text for developing a word-based language model.
--- How to design and fit a neural language model with a learned embedding and an LSTM hidden layer. 
--- How to use the learned language model to generate new text with similar statistical properties as the source text.
+- How to prepare text for developing a word-based language model.
+- How to design and fit a neural language model with a learned embedding and an LSTM hidden layer. 
+- How to use the learned language model to generate new text with similar statistical properties as the source text.
 
 These 3 goals and learnings were primarily have been achieved after implementing the second part of our project:
---How to train an LSTM network on text sequences
---How to use the trained network to generate new sequences. 
---How to develop stacked LSTM networks and lift the performance of the model.
+- How to train an LSTM network on text sequences
+- How to use the trained network to generate new sequences. 
+- How to develop stacked LSTM networks and lift the performance of the model.
