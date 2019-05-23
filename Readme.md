@@ -30,30 +30,32 @@ Neural networks are generally preferred in the development of the statistical la
 ['the', 'strange', 'case', 'of', 'dr', 'jekyll', 'and', 'mr', 'hyde', 'by', 'robert', 'louis', 'stevenson', 'contents', 'story', 'of', 'the', 'door', 'search', 'for', 'mr', 'hyde', 'dr', 'jekyll', 'was', 'quite', 'at', 'ease', 'the', 'carew', 'murder', 'case', 'incident', 'of', 'the', 'letter', 'incident', 'of', 'dr', 'lanyon', 'incident', 'at', 'the', 'window', 'the', 'last', 'night', 'dr', 'narrative', 'henry', 'full', 'statement', 'of', 'the', 'case', 'story', 'of', 'the', 'door', 'mr', 'utterson', 'the', 'lawyer', 'was', 'a', 'man', 'of', 'a', 'rugged', 'countenance', 'that', 'was', 'never', 'lighted', 'by', 'a', 'smile', 'cold', 'scanty', 'and', 'embarrassed', 'in', 'discourse', 'backward', 'in', 'sentiment', 'lean', 'long', 'dusty', 'dreary', 'and', 'yet', 'somehow', 'lovable', 'at', 'friendly', 'meetings', 'and', 'when', 'the']
 
 Total Tokens: 24550
+
 Unique Tokens: 3871
 
 Total Sequences: 24499
 
 #### Parameter after fitting the model ####
 _________________________________________________________________
-Layer (type)                 Output Shape              Param    
-=================================================================
-embedding_2 (Embedding)      (None, 50, 50)            193600    
-_________________________________________________________________
-lstm_3 (LSTM)                (None, 50, 100)           60400     
-_________________________________________________________________
-lstm_4 (LSTM)                (None, 100)               80400     
-_________________________________________________________________
-dense_3 (Dense)              (None, 100)               10100     
-_________________________________________________________________
-dense_4 (Dense)              (None, 3872)              391072    
-=================================================================
+Layer (type)              |   Output Shape          |    Param    
+--------------------------|-------------------------|------------
+embedding_2 (Embedding)   |   (None, 50, 50)        |    193600    
+                          |                         |
+lstm_3 (LSTM)             |   (None, 50, 100)       |    60400     
+                          |                         |
+lstm_4 (LSTM)             |   (None, 100)           |    80400     
+                          |                         |
+dense_3 (Dense)           |   (None, 100)           |    10100     
+                          |                         |
+dense_4 (Dense)           |   (None, 3872)          |    391072    
+-----------------------------------------------------------------
+-----------------------------------------------------------------
 Total params: 735,572
 Trainable params: 735,572
 Non-trainable params: 0
-_________________________________________________________________
+-----------------------------------------------------------------
 
-Some epochs value-
+#### Some epochs value ####
 Epoch 1/100
 24499/24499 [==============================] - 41s 2ms/step - loss: 6.6255 - acc: 0.0625
 Epoch 2/100
@@ -83,6 +85,7 @@ Epoch 10/100
 #### Seed: ####
 it almost rivalled the brightness of hope i was stepping leisurely across the court after breakfast drinking the chill of the air with pleasure when i was seized again with those indescribable sensations that heralded the change and i had but the time to gain the shelter of my cabinet before
 
+#### Generated Text ####
 two ahead now anatomical was long overthrown the screaming and obligation at least fumes of smiling and to be forced and you are not see it was a fine clear to the lawyer have been learning his clasped room i had come up with a tempest and the whole business
 
 
@@ -103,6 +106,7 @@ Total Patterns:  424871
 
 * In this step we defined our LSTM model where a single hidden LSTM layer is defined with 256 memory units, also the output layer was made dense by usage of softmax activation function such that output probability prediction is made of the 47 characters between 0 and 1
 
+#### Some Epoch Values ####
 Epoch 1/10
 424871/424871 [==============================] - 629s 1ms/step - loss: 2.8798
 
@@ -155,7 +159,7 @@ Epoch 00010: loss improved from 2.21908 to 2.18173, saving model to weights-impr
 " couldn't without passports and things. besides i've seen that man,
 boris something, since. he dined  "
 
-Generated Text Based upon particular theme/seed- 
+#### Generated Text Based upon particular theme/seed ####
 
 to the toaee th the tay an a fote to the poaee to the poaee to the soaee of the gorse if the soaee of the poaee th the taale th the taale that she was a soacl oo the soaee of the gorse th the tas ao a fert of the poaee thet she had neter teeled to the soaee of the soaee of the poaee th the taale th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poae
 Done.
@@ -180,6 +184,7 @@ We try to keep number of memory units to 256 but we will add second layer to our
 Total Characters:  424971
 Total Vocab:  49
 Total Patterns:  424871
+#### Some Epoch Values ####
 Epoch 1/10
 424871/424871 [==============================] - 626s 1ms/step - loss: 2.8109
 
