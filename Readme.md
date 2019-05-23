@@ -3,7 +3,7 @@ Nipun Dixit nd1462- Himanshu Singh hs3773
 
 
 
-#Text Generator Model with LSTM Recurrent Neural Network 
+# Text Generator Model with LSTM Recurrent Neural Network #
 
 A text generator tool which generates new and unique text based upon a particular random theme (random seed) which is chosen and fed to the model to generate a text based upon that particular theme/seed.
 
@@ -18,14 +18,14 @@ Generative models are used to study the effectiveness of the model which has lea
 In this project we  further tried to create a generative model for the text, which will be done character by character by using LSTM recurrent neural network with Keras
 
 
-##Developing a Word-Level Neural Language Model and using it to Genrate Text
+## Developing a Word-Level Neural Language Model and using it to Genrate Text ##
 Neural networks are generally preferred in the development of the statistical language models as they can utilise a distributed representation where different words with similar meanings have similar representation and apart from that they can also use a larger context of recently observed words in making the predictions.
 
 
 
-###First Part- Developing a Word-Level Neural Language Model and using it to Genrate Text
+### First Part- Developing a Word-Level Neural Language Model and using it to Genrate Text ###
 
-####Generated Tokens
+#### Generated Tokens ####
 
 ['the', 'strange', 'case', 'of', 'dr', 'jekyll', 'and', 'mr', 'hyde', 'by', 'robert', 'louis', 'stevenson', 'contents', 'story', 'of', 'the', 'door', 'search', 'for', 'mr', 'hyde', 'dr', 'jekyll', 'was', 'quite', 'at', 'ease', 'the', 'carew', 'murder', 'case', 'incident', 'of', 'the', 'letter', 'incident', 'of', 'dr', 'lanyon', 'incident', 'at', 'the', 'window', 'the', 'last', 'night', 'dr', 'narrative', 'henry', 'full', 'statement', 'of', 'the', 'case', 'story', 'of', 'the', 'door', 'mr', 'utterson', 'the', 'lawyer', 'was', 'a', 'man', 'of', 'a', 'rugged', 'countenance', 'that', 'was', 'never', 'lighted', 'by', 'a', 'smile', 'cold', 'scanty', 'and', 'embarrassed', 'in', 'discourse', 'backward', 'in', 'sentiment', 'lean', 'long', 'dusty', 'dreary', 'and', 'yet', 'somehow', 'lovable', 'at', 'friendly', 'meetings', 'and', 'when', 'the']
 
@@ -34,7 +34,7 @@ Unique Tokens: 3871
 
 Total Sequences: 24499
 
-####Parameter after fitting the model 
+#### Parameter after fitting the model ####
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
 =================================================================
@@ -75,18 +75,19 @@ Epoch 9/100
 Epoch 10/100
 24499/24499 [==============================] - 37s 1ms/step - loss: 5.4635 - acc: 0.1002
 
-####Final generated output of our model which is new and unique text
+#### Final generated output of our model which is new and unique text ####
 
-#####The first output paragraph is the printed seed text
-#####Then the 50 words of the generated text are printed.
+##### The first output paragraph is the printed seed text #####
+##### Then the 50 words of the generated text are printed #####
 
+#### Seed: ####
 it almost rivalled the brightness of hope i was stepping leisurely across the court after breakfast drinking the chill of the air with pleasure when i was seized again with those indescribable sensations that heralded the change and i had but the time to gain the shelter of my cabinet before
 
 two ahead now anatomical was long overthrown the screaming and obligation at least fumes of smiling and to be forced and you are not see it was a fine clear to the lawyer have been learning his clasped room i had come up with a tempest and the whole business
 
 
 
-###Second Part of the Project- Text Generator with LSTM Recurrent Neural Network with Keras
+### Second Part of the Project- Text Generator with LSTM Recurrent Neural Network with Keras ###
 
 In this part of our project we will focuss primarily on LSTM recurrent neural network to improve the performance and the quality of the text generation, here we will use another text dataset to perform the text generation operation.
 
@@ -94,13 +95,13 @@ So firstly Small LSTM Recurrent Neural Network is designed then later a Large LS
 
 1) Implementing Smaller Neural Network
 
-####Parameter after fitting the model 
+#### Parameter after fitting the model ####
 
 Total Characters:  424971
 Total Vocab:  49
 Total Patterns:  424871
 
--  In this step we defined our LSTM model where a single hidden LSTM layer is defined with 256 memory units, also the output layer was made dense by usage of softmax activation function such that output probability prediction is made of the 47 characters between 0 and 1
+* In this step we defined our LSTM model where a single hidden LSTM layer is defined with 256 memory units, also the output layer was made dense by usage of softmax activation function such that output probability prediction is made of the 47 characters between 0 and 1
 
 Epoch 1/10
 424871/424871 [==============================] - 629s 1ms/step - loss: 2.8798
@@ -145,12 +146,12 @@ Epoch 00010: loss improved from 2.21908 to 2.18173, saving model to weights-impr
 
 
 
-####Final generated output of our model which is new and unique text
+#### Final generated output of our model which is new and unique text ####
 
-#####The first output paragraph is the printed seed text
-#####Then the 50 words of the generated text are printed.
+##### The first output paragraph is the printed seed text #####
+##### Then the 50 words of the generated text are printed. #####
 
-Seed:
+#### Seed: ####
 " couldn't without passports and things. besides i've seen that man,
 boris something, since. he dined  "
 
@@ -159,13 +160,13 @@ Generated Text Based upon particular theme/seed-
 to the toaee th the tay an a fote to the poaee to the poaee to the soaee of the gorse if the soaee of the poaee th the taale th the taale that she was a soacl oo the soaee of the gorse th the tas ao a fert of the poaee thet she had neter teeled to the soaee of the soaee of the poaee th the taale th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poaee th the taale thet the was a boeek of the poae
 Done.
 
-####Interpreting the result obtained
+#### Interpreting the result obtained ####
 
--- It conforms to the format of the line observed in the original text which is less than total 80 characters before the generation of the new line.
+* It conforms to the format of the line observed in the original text which is less than total 80 characters before the generation of the new line.
 
--- The word-like groups are made by the separation of the characters where most are seeming to be English words (e.g. “the”,     “little” and “was”), but many even do not seem to be english word (e.g. “boeek”, “taale” and “thet”).
+* The word-like groups are made by the separation of the characters where most are seeming to be English words (e.g. “the”,     “little” and “was”), but many even do not seem to be english word (e.g. “boeek”, “taale” and “thet”).
 
--- Upon the observation it looks like some of the words obtained in the sequence make sense (e.g. “of the poae“), but many do not make any sense (e.g. “taale thet the“).
+* Upon the observation it looks like some of the words obtained in the sequence make sense (e.g. “of the poae“), but many do not make any sense (e.g. “taale thet the“).
 
 
 
@@ -174,7 +175,7 @@ Done.
 We had got the results in the above sections but those were not so accurate results so now we will try to improve the performance or quality of the generated text by creating a much larger network.
 We try to keep number of memory units to 256 but we will add second layer to our network
 
-####Parameter after fitting the model  
+#### Parameter after fitting the model ####  
 
 Total Characters:  424971
 Total Vocab:  49
@@ -220,20 +221,21 @@ Epoch 10/10
 Epoch 00010: loss improved from 1.85817 to 1.82462, saving model to weights-improvement-10-1.8246-bigger.hdf5
 
 
-####Final generated output of our model which is new and unique text
+#### Final generated output of our model which is new and unique text ####
 
-#####The first output paragraph is the printed seed text
-#####Then the 50 words of the generated text are printed.
+##### The first output paragraph is the printed seed text #####
+##### Then the 50 words of the generated text are printed. #####
 
-Seed: 
+##### Seed: #####
  ' ' d herself lying on the bank, with her head in the lap of her sister, who was gently brushing away s ''
 
+##### Text Generator #####
  ' '
 herself lying on the bank, with her head in the lap of her sister, who was gently brushing away so siee, and she sabbit said to herself and the sabbit said to herself and the sood way of the was a little that she was a little lad good to the garden, and the sood of the mock turtle said to herself, 'it was a little that the mock turtle said to see it said to sea it said to sea it say it the marge hard sat hn a little that she was so sereated to herself, and she sabbit said to herself, 'it was a little little shated of the sooe of the coomouse it was a little lad good to the little gooder head. and said to herself, 'it was a little little shated of the mouse of the good of the courte, and it was a little little shated in a little that the was a little little shated of the thmee said to see it was a little book of the was a little that she was so sereated to hare a little the began sitee of the was of the was a little that she was so seally and the sabbit was a little lad good to the little gooder head of the gad seared to see it was a little lad good to the little good''
 
 Done.
 
-####Interpreting the Result Obtained
+#### Interpreting the Result Obtained ####
 
 The first paragraph represent the generated seed text and the next paragraph is the generated text with the seed.
 
@@ -247,18 +249,18 @@ The result still seem to be quite impressive and hence the project achieves the 
 
 
 
-##Following are the further Ideas which can be used in the working of our model
+## Following are the further Ideas which can be used in the working of our model ##
 
--- Predicting fewer than 1,000 characters as output for a given seed.
--- Remove all punctuation from the source text, and therefore from the models’ vocabulary.
--- Try a one hot encoding for the input sequences.
--- Train the model on padded sentences rather than random sequences of characters.
--- Add more memory units to the layers and/or more layers.
--- Experiment with scale factors (temperature) when interpreting the prediction probabilities.
--- Changing the LSTM layers to be “stateful” to maintain state across batches.
+* Predicting fewer than 1,000 characters as output for a given seed.
+* Remove all punctuation from the source text, and therefore from the models’ vocabulary.
+* Try a one hot encoding for the input sequences.
+* Train the model on padded sentences rather than random sequences of characters.
+* Add more memory units to the layers and/or more layers.
+* Experiment with scale factors (temperature) when interpreting the prediction probabilities.
+* Changing the LSTM layers to be “stateful” to maintain state across batches.
 
 
-##Resources and Referrences Used
+## Resources and Referrences Used ##
 
 This character text model is a very popular way for generating text using recurrent neural networks.
 Below are some resources which were used in developing this project
@@ -270,20 +272,20 @@ Below are some resources which were used in developing this project
 --Lasagne code example of LSTM for text generation. (https://github.com/Lasagne/Recipes/blob/master/examples/lstm_text_generation.py)
 
 
-##Summary/Conclusion
+## Summary/Conclusion ##
 
 In this project we could discover and could efficiently develop and train a LSTM recurrent neural network model for text generation with the Keras.
 
 The text generated is unique and is based upon the randomly chosen seed.
 
 1) These 3 goals and learnings were primarily have been achieved after implementing the first part of our project:
-- How to prepare text for developing a word-based language model.
-- How to design and fit a neural language model with a learned embedding and an LSTM hidden layer.
-- How to use the learned language model to generate new text with similar statistical properties as the source text.
+* How to prepare text for developing a word-based language model.
+* How to design and fit a neural language model with a learned embedding and an LSTM hidden layer.
+* How to use the learned language model to generate new text with similar statistical properties as the source text.
 
 2) These 3 goals and learnings were primarily have been achieved after implementing the second part of our project:
-- How to train an LSTM network on text sequences
-- How to use the trained network to generate new sequences.
-- How to develop stacked LSTM networks and lift the performance of the model.
+* How to train an LSTM network on text sequences
+* How to use the trained network to generate new sequences.
+* How to develop stacked LSTM networks and lift the performance of the model.
 
 
