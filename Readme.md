@@ -1,5 +1,5 @@
 # Dafodils.ai- Text and Story Generator Tool #
-Nipun Dixit nd1462- Himanshu Singh hs3773
+Nipun Dixit nd1462, Himanshu Singh hs3773
 
 
 
