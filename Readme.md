@@ -47,7 +47,9 @@ dense_4 (Dense)           |   (None, 3872)          |    391072
 
 
 Total params: 735,572
+
 Trainable params: 735,572
+
 Non-trainable params: 0
 
 
