@@ -1,7 +1,7 @@
 # Dafodils.ai- Text and Story Generator Tool #
 Nipun Dixit nd1462, Himanshu Singh hs3773
 
-Note- This entire model has been developed on the GPU NVIDIA P100 in order to improve the processing power, despite having a very high processing power the model took several hours to be deployed. 
+Note- This entire model has been developed on the GPU NVIDIA P100 in order to improve the processing power, despite GPU being having a very high processing power the entire model took couple of hours to be deployed. 
 
 # Text Generator Model with LSTM Recurrent Neural Network #
 
